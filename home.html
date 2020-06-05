@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.js"></script>
+</head>
+<body>
+  <h3>
+    测试koa静态资源目录
+  </h3>
+
+  <script>
+    let url = 'http://localhost:3000/add';
+    let data = {
+      params: {
+        username: 'laohu',
+        phone: 13800000000
+      }
+    }
+    axios.get(url, data).then(res => {
+      console.log(res);
+    })
+
+  </script>
+</body>
+</html>
